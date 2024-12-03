@@ -1,0 +1,10 @@
+﻿@model IEnumerable<Ecomerce_Web.ViewModels.HangHoaVM>
+
+@{
+    ViewData["Title"] = "Search";
+    Layout = "_TemplateDanhSachHangHoa";
+}
+
+<!-- List Hàng Hoá -->
+@await Html.PartialAsync("ProductItem", Model)
+<!-- End List Hàng Hoá -->
